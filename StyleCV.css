@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+body{
+    margin: auto;
+}
+
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+.contenedor::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*-----Otros dispositivos-----*/
+[class*="col-"]{width: 100%;}
+@media screen and (max-width: 1023px){
+
+.responsive{
+    width: 100% !important;
+    margin: 0px !important;
+    text-align: center;
+}
+
+.nvg-barra{
+    display: block !important;
+}
+#contenedor_madre{
+    flex-direction: column;
+}
+
+#columna_datos_personales{
+    border-left: 0px;
+    border-top: #042993 ridge;
+}
+#datos_personales{
+    text-align: center;
+}
+.fotoperfil{
+    display: flex;
+    justify-content: center;
+}
+#fotoperfil{
+    width: unset !important;
+}
+#guitarra_AlexGrey{
+    justify-content: center !important;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-image:  url("file:///C:/Fondos%20para%20Escritorio/Alex_Grey_Bond-1.jpg"); 
+}
+#guitarrista-imagen{
+    display:none;
+}
+}
+/*------------------------*/
+
+/*-----Para PC de Escritorio-----*/
+@media screen and (min-width: 1024px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    }
+/*-------------------------*/
+
+@media print{
+        .footer {page-break-after: always;}
+    }
+@media print{
+        .page-break-always {page-break-after: always;}
+    }
+    
+b{
+    text-shadow: 1px 1px 1px rgb(106 115 181);
+    font-size: 15px;
+}
+p{
+    text-indent: 15px;
+}
+
+#contenedor_madre{
+    display: flex;
+    padding: 0px;
+    border-style: ridge;
+    border-color: #042993;
+}
+
+/*a:link{
+    color: darkblue;
+}*/
+
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    color: rgb(147 197 47);
+}
+
+a:active{
+    color: rgb(72 231 231);
+}
+
+/*-----Contenido principal (perfil e info; col izquierda)-----*/
+#contenido{
+    width: max-content;
+}
+
+#encabezado_y_contenido{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cbf2fb;
+}
+
+#fecha-curso{
+    font-weight: bolder;
+}
+
+.fotoperfil{
+    margin-right: 20px;
+    width: auto;
+}
+#fotoperfil{
+    border-radius: 45%;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+#guitarra_AlexGrey{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+
+#guitarrista-imagen{
+    width: 320px;
+    height: 170px;
+}
+
+.nombreyprofesion{
+    column-width: auto;
+    width: fit-content;
+}
+
+#nombreyapellido{
+    font-family: "Lucida Handwriting";
+    text-decoration: underline double 1px;
+    text-underline-position: under;
+    text-shadow: 8px 20px 11px #13519f;
+    font-size: 2em;
+    margin: auto;
+}
+
+.nvg-barra{
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+    background-color: cornflowerblue;
+    border-style: outset;
+    overflow: hidden;
+}
+
+.nvg-li{
+    float: left;
+    text-align: center;
+}
+.nvg-opcion{
+    display: block;
+    padding: 5px 3px;
+    text-align: center;
+    color: rgb(235 235 235);
+    text-shadow: 1px 1px 2px rgb(0 0 0);
+}
+
+.nvg-opcion:link{
+    color: #cbf2fb;
+    background-color: cornflowerblue;
+}
+.nvg-opcion:visited{
+    color: #cbf2fb;
+    background-color: cornflowerblue;
+}
+.nvg-opcion:hover{
+    color: #cbf2fb;
+    background-color: #042993;
+}
+.nvg-opcion:active{
+    background-color: #0056a1;
+}
+
+
+#lista-cursos{
+    list-style: none;
+    line-height: 1.5em;
+}
+
+#profesion{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1.30em;
+}
+
+.referencia_nombre{
+    font-style: italic;
+    font-weight: bold;
+    color: #0056a1;
+}
+/*------Datos Personales (col derecha)------*/
+#columna_datos_personales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left-style: ridge;
+    border-color: #042993;
+    background-color: cornflowerblue;
+}
+
+#datos_personales{
+    font-weight: 200;
+    line-height: 2.5;
+    color: azure;
+    height: fit-content;
+    position: sticky;
+    top: 12em;
+}
+
+/*------Formulario de Contacto-----*/
+#contenedor_formulario{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2em 3em 1em;
+}
+
+#cuadro_titulo_formulario{
+    border-style: outset;
+    border-color: cornflowerblue;
+}
+
+#formulario_titulo{
+    font-size: larger;
+}
+
+form{
+    border-style: outset;
+    border-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    padding: 0em 14em;
+}
+
+/*-------- Pie de la página --------*/
+.footer{
+    display: table;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    border-style: ridge;
+    border-color: #042993;
+    border-top-style: none;
+}
+
+#Contacto_link{
+    font-family: monospace;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px whitesmoke;
+}
+#Contacto_link:link{
+    color: rgb(0 60 120);
+}
+#Contacto_link:visited{
+    color: rgb(0 60 120);
+}
+
+#Contacto_link:hover{
+    color: rgb(28 100 80 / 65%);;
+}
+#Contacto_link:active{
+    color: rgb(231, 236, 240);
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+#copyright{
+    color: rgb(0 60 120);
+    text-shadow: 0px 0px 5px whitesmoke;
+    font-family: monospace;
+    margin-right: 5px;
+}
+
+.icono_social-media{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 7px whitesmoke;
+    opacity: 0.6;
+    margin: 5px;
+}
+
+.icono_social-media:hover{
+    opacity: 1.0;
+}
+
+.social-media_contenedor{
+    display: flex;
+    justify-content: center;
+}
