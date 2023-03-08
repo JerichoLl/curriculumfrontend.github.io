@@ -29,9 +29,6 @@ body{
     text-align: center;
 }
 
-.nvg-barra{
-    display: block !important;
-}
 #contenedor_madre{
     flex-direction: column;
 }
@@ -62,6 +59,19 @@ body{
 #guitarrista-imagen{
     display:none;
 }
+h2{
+    text-aling: center;
+}
+.nvg-barra{
+    display: block !important;
+}
+.nvg-opcion{
+    font-size: xx-small;
+}
+p{
+    text-align: center;
+}
+    
 }
 /*------------------------*/
 
@@ -192,7 +202,7 @@ a:active{
 }
 .nvg-opcion{
     display: block;
-    padding: 5px 3px;
+    padding: 5px 5px;
     text-align: center;
     color: rgb(235 235 235);
     text-shadow: 1px 1px 2px rgb(0 0 0);
